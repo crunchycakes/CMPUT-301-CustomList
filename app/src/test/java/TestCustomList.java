@@ -21,6 +21,9 @@ public class TestCustomList {
         assertEquals(size, list.countCities());
         list.addCity(new City("CountTown", "CM"));
         assertEquals(size + 1, list.countCities());
+
+        list.addCity(null);
+        assertEquals(size + 1, list.countCities());
     }
 
     @Test
@@ -28,6 +31,14 @@ public class TestCustomList {
         int size = list.getCount();
         list.addCity(new City("FirstTown", "CM"));
         assertEquals(list.getCount(), size + 1);
+    }
+
+    @Test
+    public void hasCityTest() {
+        City testCity = new City("Spooky", "OO");
+        assertFalse(list.hasCity(testCity));
+        list.addCity(testCity);
+        assertTrue(list.hasCity(testCity));
     }
 
 }

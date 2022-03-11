@@ -77,4 +77,12 @@ public class CustomList extends ArrayAdapter<City> {
         return;
     }
 
+    /* see if city is present in list
+     * @param city
+     * @return
+     */
+    public boolean hasCity(City city) {
+        return true;
+    }
+
 }
