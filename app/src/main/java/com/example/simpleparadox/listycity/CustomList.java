@@ -47,4 +47,12 @@ public class CustomList extends ArrayAdapter<City> {
         return view;
 
     }
+
+    /* add a city into list
+     * @param city
+     */
+    public void addCity(City city) {
+        return;
+    }
+
 }
