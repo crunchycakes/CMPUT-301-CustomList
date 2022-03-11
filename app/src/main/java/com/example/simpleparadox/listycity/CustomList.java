@@ -88,4 +88,11 @@ public class CustomList extends ArrayAdapter<City> {
         return false;
     }
 
+    /* delete a city from list if possible
+     * @param city
+     */
+    public void deleteCity(City city) {
+        return;
+    }
+
 }
