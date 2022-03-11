@@ -60,7 +60,13 @@ public class CustomList extends ArrayAdapter<City> {
      * @return
      */
     public int countCities() {
-        return 0;
+        int count = 0;
+        for (City city : cities) {
+            if (city != null) {
+                count++;
+            }
+        }
+        return count;
     }
 
     /* add a city into list
